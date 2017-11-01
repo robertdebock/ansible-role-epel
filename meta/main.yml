@@ -5,14 +5,10 @@ galaxy_info:
   min_ansible_version: 1.2
 
   platforms:
-  - name: CentOS
-    versions:
-    - 6
-    - 7
-  - name: RHEL
-    versions:
-    - 6
-    - 7
+    - name: EL
+      versions:
+      - 6
+      - 7
 
   galaxy_tags:
     - epel
