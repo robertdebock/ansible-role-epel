@@ -1,0 +1,5 @@
+---
+# tasks file for epel
+- name: install epel-release
+  yum:
+    name: epel-release
