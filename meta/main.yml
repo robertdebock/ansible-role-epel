@@ -3,6 +3,7 @@ galaxy_info:
   description: Install Extra Packages for Enterprise Linux Edit
   license: Apache License, Version 2.0
   min_ansible_version: 1.2
+  min_ansible_container_version: 0.2.0
 
   platforms:
     - name: EL
@@ -17,4 +18,4 @@ galaxy_info:
     - repository
 
 dependencies:
-  - bootstrap
+  - robertdebock.bootstrap
