@@ -4,3 +4,5 @@
   package:
     name: epel-release
     state: present
+  when:
+    - ansible_distribution == "CentOS"
