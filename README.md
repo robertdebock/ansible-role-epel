@@ -16,7 +16,7 @@ None known.
 Dependencies
 ------------
 
-robertdebock/bootstrap is an optional dependency to allow Ansible to run on clients.
+- robertdebock/bootstrap
 
 Example Playbook
 ----------------
