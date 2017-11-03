@@ -32,6 +32,7 @@ install:
   - if [[ ${distro} == ubuntu:* ]] ; then docker exec ${containerid} apt-get -y install ansible ; fi
 
 script:
+  - docker exec ${containerid} ansible-galaxy --role-file requirements.yml
   - docker exec ${containerid} ansible-playbook --inventory /etc/ansible/roles/${role}/tests/inventory /etc/ansible/roles/${role}/tests/test.yml --syntax-check
   - docker exec ${containerid} ansible-playbook --inventory /etc/ansible/roles/${role}/tests/inventory /etc/ansible/roles/${role}/tests/test.yml --connection=local --become
 
