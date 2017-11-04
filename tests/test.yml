@@ -3,3 +3,15 @@
   remote_user: root
   roles:
     - epel
+  tasks:
+    - name: install package from epel
+      package:
+        name: "{{ item }}"
+        state: present
+      with_items:
+        - ansible-lint
+        - bats
+        - copr-cli
+        - drupal7
+      when:
+        - ( ansible_distribution == "CentOS" or ansible_distribution == "Red Hat Enterprise Linux" )
