@@ -1,4 +1,4 @@
-Role Name
+EPEL
 =========
 
 Install Extra Packages for Enterprise Linux Edit
@@ -26,7 +26,7 @@ Example Playbook
 - hosts: servers
   become: yes
   roles:
-    - epel
+    - robertdebock.epel
 ```
 
 License
