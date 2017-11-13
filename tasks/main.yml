@@ -1,5 +1,5 @@
 ---
-# tasks file for epel
+# tasks file for ansible-role-epel
 - name: install epel-release
   package:
     name: epel-release

@@ -1,6 +1,6 @@
 galaxy_info:
   author: Robert de Bock
-  description: Install Extra Packages for Enterprise Linux Edit
+  description: Install Extra Packages for Enterprise Linux and CentOS.
   license: Apache License, Version 2.0
   min_ansible_version: 2.0
   min_ansible_container_version: 0.2.0
@@ -26,12 +26,15 @@ galaxy_info:
 
   galaxy_tags:
     - epel
-    - centos
-    - fedora
-    - debian
-    - ubuntu
-    - rhel
     - repository
+    - installer
+    - packages
+    - Alpine
+    - CentOS
+    - Fedora
+    - Debian
+    - Ubuntu
+    - RHEL
 
 dependencies:
   - robertdebock.bootstrap

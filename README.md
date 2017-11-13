@@ -1,12 +1,13 @@
 EPEL
 =========
 
-Install Extra Packages for Enterprise Linux Edit
+Install Extra Packages for Enterprise Linux and CentOS.
+Applying this role to other types of operating systems will simply "skip" the job.
 
 Requirements
 ------------
 
-This role is applicable on CentOS and RHEL machines.
+Access to a repository containing packages, likely on the internet.
 
 Role Variables
 --------------
@@ -25,8 +26,15 @@ Example Playbook
 ---
 - hosts: servers
   become: yes
+
   roles:
     - robertdebock.epel
+
+  tasks:
+    - name: install package from EPEL
+      package:
+        name: ansible-lint
+        state: present    
 ```
 
 License
