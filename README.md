@@ -1,4 +1,4 @@
-EPEL
+ansible-role-epel
 =========
 
 Install Extra Packages for Enterprise Linux and CentOS.

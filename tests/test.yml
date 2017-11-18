@@ -3,7 +3,7 @@
   remote_user: root
 
   roles:
-    - epel
+    - ansible-role-epel
 
   tasks:
     - name: install package from EPEL
