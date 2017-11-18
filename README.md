@@ -17,7 +17,7 @@ None known.
 Dependencies
 ------------
 
-- robertdebock/bootstrap
+- robertdebock/ansible-role-bootstrap
 
 Example Playbook
 ----------------
@@ -28,7 +28,7 @@ Example Playbook
   become: yes
 
   roles:
-    - robertdebock.epel
+    - robertdebock.ansible-role-epel
 
   tasks:
     - name: install package from EPEL
