@@ -35,7 +35,7 @@ Example Playbook
   become: yes
 
   roles:
-    - robertdebock.ansible-role-epel
+    - ansible-role-epel
 
   tasks:
     - name: install package from EPEL
