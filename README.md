@@ -44,7 +44,7 @@ Example Playbook
         state: present    
 ```
 
-Install this role using `galaxy install robertdebock.ansible-role-nginx`.
+Install this role using `galaxy install robertdebock.ansible-role-epel`.
 
 License
 -------
