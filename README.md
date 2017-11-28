@@ -35,7 +35,7 @@ Example Playbook
   become: yes
 
   roles:
-    - ansible-role-epel
+    - robertdebock.ansible-role-epel
 
   tasks:
     - name: install package from EPEL
@@ -43,6 +43,8 @@ Example Playbook
         name: ansible-lint
         state: present    
 ```
+
+Install this role using `galaxy install robertdebock.ansible-role-nginx`.
 
 License
 -------
