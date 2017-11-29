@@ -1,7 +1,7 @@
-ansible-role-epel
+epel
 =========
 
-[![Build Status](https://travis-ci.org/robertdebock/ansible-role-epel.svg?branch=master)](https://travis-ci.org/robertdebock/ansible-role-epel)
+[![Build Status](https://travis-ci.org/robertdebock.ansible-role-epel.svg?branch=master)](https://travis-ci.org/robertdebock/ansible-role-epel)
 
 Install Extra Packages for Enterprise Linux and CentOS.
 Applying this role to other types of operating systems will simply "skip" the job.
@@ -19,9 +19,9 @@ None known.
 Dependencies
 ------------
 
-- robertdebock/ansible-role-bootstrap
+- robertdebock.bootstrap
 
-Download the dependencies by issueing this command:
+Download the dependencies by issuing this command:
 ```
 ansible-galaxy install --role-file requirements.yml
 ```
@@ -35,7 +35,7 @@ Example Playbook
   become: yes
 
   roles:
-    - robertdebock.ansible-role-epel
+    - robertdebock.epel
 
   tasks:
     - name: install package from EPEL
@@ -44,7 +44,7 @@ Example Playbook
         state: present    
 ```
 
-Install this role using `galaxy install robertdebock.ansible-role-epel`.
+Install this role using `galaxy install robertdebock.epel`.
 
 License
 -------
