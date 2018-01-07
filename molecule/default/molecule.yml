@@ -8,25 +8,25 @@ driver:
 lint:
   name: yamllint
 platforms:
-  - name: centos-6
+  - name: epel-centos-6
     image: centos:6
-  - name: centos-7
+  - name: epel-centos-7
     image: centos:7
-  - name: debian-jessie
+  - name: epel-debian-jessie
     image: debian:jessie
-  - name: debian-buster
+  - name: epel-debian-buster
     image: debian:buster
-  - name: fedora-26
+  - name: epel-fedora-26
     image: fedora:26
-  - name: fedora-27
+  - name: epel-fedora-27
     image: fedora:27
-  - name: opensuse-42.2
+  - name: epel-opensuse-42.2
     image: opensuse:42.2
-  - name: opensuse-42.3
+  - name: epel-opensuse-42.3
     image: opensuse:42.3
-  - name: ubuntu-zesty
+  - name: epel-ubuntu-zesty
     image: ubuntu:zesty
-  - name: ubuntu-artful
+  - name: epel-ubuntu-artful
     image: ubuntu:artful
 provisioner:
   name: ansible
