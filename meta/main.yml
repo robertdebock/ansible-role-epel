@@ -20,5 +20,4 @@ galaxy_info:
     - CentOS
     - RHEL
 
-dependencies:
-  - robertdebock.bootstrap
+dependencies: []

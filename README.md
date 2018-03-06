@@ -19,6 +19,8 @@ None known.
 Dependencies
 ------------
 
+Include this role to prepare your system.
+
 - robertdebock.bootstrap
 
 Download the dependencies by issuing this command:
@@ -35,7 +37,8 @@ Example Playbook
   become: yes
 
   roles:
-    - robertdebock.epel
+    - role: robertdebock.bootstrap
+    - role: robertdebock.epel
 
   tasks:
     - name: install package from EPEL
