@@ -6,6 +6,10 @@ epel
 Install Extra Packages for Enterprise Linux and CentOS.
 Applying this role to other types of operating systems will simply "skip" the job.
 
+Context
+--------
+This role is a part of many compatible roles. Have a look at [the documentation of these roles](https://robertdebock.nl/) for further information.
+
 Requirements
 ------------
 
