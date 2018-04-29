@@ -8,39 +8,10 @@ driver:
 lint:
   name: yamllint
 platforms:
-  - name: epel-archlinux
-    image: base/archlinux
-  - name: epel-alpine-3.6
-    image: alpine:3.6
-  - name: epel-alpine-3.7
-    image: alpine:3.7
   - name: epel-centos-6
     image: centos:6
   - name: epel-centos-7
     image: centos:7
-  - name: epel-debian-jessie
-    image: debian:jessie
-  - name: epel-debian-stretch
-    image: debian:stretch
-  - name: epel-debian-buster
-    image: debian:buster
-  - name: epel-fedora-26
-    image: fedora:26
-  - name: epel-fedora-27
-    image: fedora:27
-  - name: epel-opensuse-42.2
-    image: opensuse:42.2
-  - name: epel-opensuse-42.3
-    image: opensuse:42.3
-    # 14.04 LTS
-  - name: epel-ubuntu-trusty
-    image: ubuntu:trusty
-    # 16.04 LTS
-  - name: epel-ubuntu-xenial
-    image: ubuntu:xenial
-    # 17.04
-  - name: epel-ubuntu-artful
-    image: ubuntu:artful
 provisioner:
   name: ansible
   lint:
