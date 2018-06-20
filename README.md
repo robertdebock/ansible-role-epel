@@ -43,7 +43,7 @@ This role has been tested against the following distributions and Ansible versio
 |distribution|ansible 2.3|ansible 2.4|ansible 2.5|
 |------------|-----------|-----------|-----------|
 |centos-6|yes|yes|yes|
-|centos-7|yes|yes|yes|
+|centos-latest|yes|yes|yes|
 
 
 Example Playbook
