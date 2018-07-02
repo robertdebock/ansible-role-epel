@@ -22,7 +22,7 @@ galaxy_info:
     - repository
     - installer
     - packages
-    - CentOS
-    - RHEL
+    - centos
+    - rhel
 
 dependencies: []
