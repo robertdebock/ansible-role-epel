@@ -40,11 +40,10 @@ Compatibility
 
 This role has been tested against the following distributions and Ansible version:
 
-|distribution|ansible 2.3|ansible 2.4|ansible 2.5|
+|distribution|ansible 2.4|ansible 2.5|ansible 2.6|
 |------------|-----------|-----------|-----------|
 |centos-6|yes|yes|yes|
 |centos-latest|yes|yes|yes|
-
 
 Example Playbook
 ----------------
