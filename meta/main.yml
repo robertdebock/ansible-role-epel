@@ -4,7 +4,7 @@ galaxy_info:
   ansible_role: epel
   description: Install Extra Packages for Enterprise Linux and CentOS.
   license: Apache License, Version 2.0
-  min_ansible_version: 2.3
+  min_ansible_version: 2.4
   min_ansible_container_version: 0.2.0
 
   platforms:
