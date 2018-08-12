@@ -61,7 +61,6 @@ Example Playbook
     - name: install package from EPEL
       package:
         name: ansible-lint
-        state: present    
 ```
 
 Install this role using `galaxy install robertdebock.epel`.
