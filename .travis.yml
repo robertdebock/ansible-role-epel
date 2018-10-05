@@ -7,16 +7,26 @@ env:
   - version=">=2.4,<2.5" distro="centos-6"
   - version=">=2.5,<2.6" distro="centos-6"
   - version=">=2.6,<2.7" distro="centos-6"
+  - version=">=2.7,<2.8" distro="centos-6"
+  - version="devel" distro="centos-6"
   - version=">=2.4,<2.5" distro="centos-latest"
   - version=">=2.5,<2.6" distro="centos-latest"
   - version=">=2.6,<2.7" distro="centos-latest"
+  - version=">=2.7,<2.8" distro="centos-latest"
+  - version="devel" distro="centos-latest"
+
+matrix:
+  allow_failures:
+    - env: version="devel" distro="centos-6"
+    - env: version="devel" distro="centos-latest"
 
 cache:
   - pip
 
 install:
   - pip install --upgrade pip
-  - pip install ansible"${version}"
+  - if [ "${version}" != "devel" ] ; then pip install ansible"${version}" ; fi
+  - if [ "${version}" = "devel" ] ; then pip install git+https://github.com/ansible/ansible.git@devel ; fi
   - pip install molecule
   - pip install docker
 

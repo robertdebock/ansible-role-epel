@@ -3,6 +3,6 @@
 - name: install epel-release
   package:
     name: epel-release
-    state: present
+    state: "{{ epel_package_state }}"
   when:
     - ( ansible_distribution == "CentOS" or ansible_distribution == "Red Hat Enterprise Linux" )
