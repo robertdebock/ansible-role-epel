@@ -4,14 +4,16 @@ dependency:
   options:
     role-file: requirements.yml
 driver:
-  name: docker
+  name: vagrant
+  provider:
+    name: virtualbox
 lint:
   name: yamllint
 platforms:
-  - name: epel-centos-6
-    image: centos:6
-  - name: epel-centos-latest
-    image: centos:latest
+  - name: epel-debian
+    box: debian/stretch64
+  - name: epel-fedora
+    box: fedora/28-cloud-base
 provisioner:
   name: ansible
   lint:
@@ -20,7 +22,7 @@ provisioner:
     defaults:
       callback_plugins: /usr/lib/python2.7/site-packages/ara/plugins/callbacks
 scenario:
-  name: default
+  name: vagrant
 verifier:
   name: goss
   lint:

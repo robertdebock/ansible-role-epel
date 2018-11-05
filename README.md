@@ -3,10 +3,7 @@ epel
 
 [![Build Status](https://travis-ci.org/robertdebock/ansible-role-epel.svg?branch=master)](https://travis-ci.org/robertdebock/ansible-role-epel)
 
-Install Extra Packages for Enterprise Linux and CentOS.
-
-Applying this role to other types of operating systems will simply "skip" the job.
-
+The purpose of this role is to install epel on your system.
 
 Example Playbook
 ----------------

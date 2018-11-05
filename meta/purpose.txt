@@ -1,3 +1,0 @@
-Install Extra Packages for Enterprise Linux and CentOS.
-
-Applying this role to other types of operating systems will simply "skip" the job.
