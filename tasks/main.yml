@@ -5,4 +5,4 @@
     name: epel-release
     state: "{{ epel_package_state }}"
   when:
-    - ( ansible_distribution == "CentOS" or ansible_distribution == "RedHat" )
+    - ansible_distribution in [ "CentOS", "RedHat" ]
