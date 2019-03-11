@@ -30,9 +30,6 @@ These variables are set in `defaults/main.yml`:
 ```yaml
 ---
 # defaults file for epel
-
-# To update all packages installed by this roles, set `epel_package_state` to `latest`.
-epel_package_state: present
 ```
 
 Requirements

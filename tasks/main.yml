@@ -3,7 +3,7 @@
 - name: install epel-release
   package:
     name: epel-release
-    state: "{{ epel_package_state }}"
+    state: present
   when:
     - ansible_distribution in [ "CentOS", "RedHat" ]
   register: epel_install_epel_release
