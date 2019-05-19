@@ -4,10 +4,10 @@ language: python
 services: docker
 
 env:
-  - version=">=2.6,<2.7" distro="centos-6"
+  - version=">=2.7,<2.8" distro="centos-6"
   - version="" distro="centos-6"
   - version="devel" distro="centos-6"
-  - version=">=2.6,<2.7" distro="centos-latest"
+  - version=">=2.7,<2.8" distro="centos-latest"
   - version="" distro="centos-latest"
   - version="devel" distro="centos-latest"
 
