@@ -5,7 +5,7 @@
     name: epel-release
     state: present
   when:
-    - ansible_os_family == "RedHat"
+    - ansible_distribution in [ "CentOS", "Red Hat Enterprise Linux" ]
   register: epel_install_epel_release
   until: epel_install_epel_release is succeeded
   retries: 3
