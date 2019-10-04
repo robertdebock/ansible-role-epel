@@ -6,8 +6,8 @@ epel
 
 Install epel on your system.
 
-<img src="https://img.shields.io/ansible/role/d/"/>
-<img src="https://img.shields.io/ansible/quality/"/>
+<img src="https://img.shields.io/ansible/role/d/21643"/>
+<img src="https://img.shields.io/ansible/quality/21643"/>
 
 Example Playbook
 ----------------
