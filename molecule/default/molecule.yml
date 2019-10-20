@@ -3,26 +3,19 @@ dependency:
   name: galaxy
   options:
     role-file: requirements.yml
-driver:
-  name: docker
 lint:
   name: yamllint
+driver:
+  name: docker
 platforms:
-  - name: epel-centos-6
-    image: centos:6
-  - name: epel-centos-latest
-    image: centos:latest
+  - name: "${image:-default}-${TOX_ENVNAME:-default}"
+    image: "${namespace}${image:-docker-fedora-systemd}:${tag:-latest}"
+    command: sh -c "while true ; do sleep 30 ; done"
+    pre_build_image: yes
 provisioner:
   name: ansible
-  inventory:
-    host_vars:
-      epel-fedora-latest:
-        ansible_python_interpreter: /usr/bin/python3
-      epel-fedora-rawhide:
-        ansible_python_interpreter: /usr/bin/python3
-  config_options:
-    defaults:
-      stdout_callback: yaml
-      bin_ansible_callbacks: true
+  playbooks:
+    prepare: prepare.yml
+    converge: playbook.yml
 scenario:
   name: default
