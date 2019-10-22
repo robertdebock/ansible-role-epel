@@ -7,5 +7,5 @@
   tasks:
     - name: install a package from epel
       package:
-        name: stdt
+        name: ztdt
         state: present
