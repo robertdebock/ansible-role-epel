@@ -15,14 +15,9 @@ env:
     namespace="robertdebock"
   matrix:
     - image="amazonlinux" tag="1"
-    - image="amazonlinux"
+    - image="amazonlinux" tag="latest"
     - image="centos" tag="7"
-    - image="redhat" tag="7"
-    - image="centos"
-    - image="redhat"
-
-matrix:
-  allow_failures:
+    - image="centos" tag="latest"
 
 cache:
   - pip
