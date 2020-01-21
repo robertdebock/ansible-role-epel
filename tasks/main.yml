@@ -4,6 +4,8 @@
   package:
     name: "{{ epel_url }}"
     state: present
+  notify:
+    - yum update cache
   when:
     - ansible_distribution in [ "CentOS", "RedHat", "Amazon" ]
   register: epel_install_epel_release
