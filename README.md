@@ -43,7 +43,7 @@ For verification `molecule/resources/verify.yml` run after the role has been app
   tasks:
     - name: install a package from epel
       package:
-        name: zstd
+        name: aalib
         state: present
 ```
 
@@ -79,7 +79,7 @@ Here is an overview of related roles:
 
 ## Compatibility
 
-This role has been tested on these [container images](https://hub.docker.com/):
+This role has been tested on these [container images](https://hub.docker.com/u/robertdebock):
 
 |container|tags|
 |---------|----|
