@@ -8,6 +8,3 @@
     - yum update cache
   when:
     - ansible_distribution in [ "CentOS", "RedHat", "Amazon" ]
-  register: epel_install_epel_release
-  until: epel_install_epel_release is succeeded
-  retries: 3
