@@ -25,7 +25,5 @@ provisioner:
     defaults:
       stdout_callback: yaml
       bin_ansible_callbacks: yes
-  options:
-    vvv: True
 verifier:
   name: ansible
