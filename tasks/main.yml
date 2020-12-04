@@ -1,5 +1,6 @@
 ---
 # tasks file for epel
+
 - name: install epel gpg key
   rpm_key:
     key: "{{ epel_gpg_key }}"
