@@ -2,9 +2,9 @@
 
 Install epel on your system.
 
-|Travis|GitHub|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-epel.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-epel)|[![github](https://github.com/robertdebock/ansible-role-epel/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-epel/actions)|[![quality](https://img.shields.io/ansible/quality/21643)](https://galaxy.ansible.com/robertdebock/epel)|[![downloads](https://img.shields.io/ansible/role/d/21643)](https://galaxy.ansible.com/robertdebock/epel)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-epel.svg)](https://github.com/robertdebock/ansible-role-epel/releases/)|
+|Travis|GitHub|GitLab|Quality|Downloads|Version|
+|------|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-epel.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-epel)|[![github](https://github.com/robertdebock/ansible-role-epel/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-epel/actions)|[![gitlab](https://gitlab.com/robertdebock/ansible-role-epel/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-epel)|[![quality](https://img.shields.io/ansible/quality/21643)](https://galaxy.ansible.com/robertdebock/epel)|[![downloads](https://img.shields.io/ansible/role/d/21643)](https://galaxy.ansible.com/robertdebock/epel)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-epel.svg)](https://github.com/robertdebock/ansible-role-epel/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -107,10 +107,6 @@ image="debian" tag="stable" tox
 ## [License](#license)
 
 Apache-2.0
-
-## [Contributors](#contributors)
-
-I'd like to thank everybody that made contributions to this repository. It motivates me, improves the code and is just fun to collaborate.
 
 
 ## [Author Information](#author-information)
