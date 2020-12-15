@@ -16,4 +16,4 @@
         - yum update cache
   when:
     - ansible_distribution in [ "Amazon", "CentOS", "RedHat" ]
-    - ansible_distribution_major_version in [ 7, 8 ]
+    - ansible_distribution_major_version in [ "7", "8", "2018" ]
