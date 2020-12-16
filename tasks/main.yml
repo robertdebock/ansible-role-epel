@@ -15,5 +15,7 @@
       notify:
         - yum update cache
   when:
-    - ansible_distribution in [ "Amazon", "CentOS", "RedHat" ]
-    - ansible_distribution_major_version in [ "7", "8", "2018" ]
+    - (ansible_distribution == "Amazon" and
+      ansible_distribution_major_version == "2") or
+      (ansible_distribution in [ "CentOS", "RedHat" ] and
+      ansible_distribution_major_version in [ "7", "8" ])
