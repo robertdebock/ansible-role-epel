@@ -4,12 +4,12 @@
 - name: install epel
   block:
     - name: install epel gpg key
-      rpm_key:
+      ansible.builtin.rpm_key:
         key: "{{ epel_gpg_key }}"
         state: present
 
     - name: install epel-release
-      package:
+      ansible.builtin.package:
         name: "{{ epel_url }}"
         state: present
       notify:
