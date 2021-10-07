@@ -35,7 +35,7 @@ jobs:
         config:
           - image: "amazonlinux"
             tag: "latest"
-          - image: "rockylinux"
+          - image: "enterpriselinux"
             tag: "latest"
     steps:
       - name: checkout
