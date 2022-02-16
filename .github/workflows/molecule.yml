@@ -36,6 +36,8 @@ jobs:
           - image: "amazonlinux"
             tag: "latest"
           - image: "enterpriselinux"
+            tag: "7"
+          - image: "enterpriselinux"
             tag: "latest"
     steps:
       - name: checkout
