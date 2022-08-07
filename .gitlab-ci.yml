@@ -23,8 +23,6 @@ molecule:
         tag: "7"
       - image: "enterpriselinux"
         tag: "8"
-      - image: "enterpriselinux"
-        tag: "latest"
 
 galaxy:
   script:
