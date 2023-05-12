@@ -5,7 +5,7 @@
   gather_facts: no
 
   tasks:
-    - name: install a package from epel
+    - name: Install a package from epel
       ansible.builtin.package:
         name: aalib
         state: present
