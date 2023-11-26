@@ -1,4 +1,4 @@
-# Ansible role [epel](#epel)
+# [Ansible role epel](#epel)
 
 Install epel on your system.
 
