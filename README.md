@@ -1,4 +1,4 @@
-# [Ansible role epel](#epel)
+# [Ansible role epel](#ansible-role-epel)
 
 Install epel on your system.
 
@@ -51,7 +51,7 @@ The following roles are used to prepare a system. You can prepare your system in
 
 ## [Context](#context)
 
-This role is a part of many compatible roles. Have a look at [the documentation of these roles](https://robertdebock.nl/) for further information.
+This role is part of many compatible roles. Have a look at [the documentation of these roles](https://robertdebock.nl/) for further information.
 
 Here is an overview of related roles:
 ![dependencies](https://raw.githubusercontent.com/robertdebock/ansible-role-epel/png/requirements.png "Dependencies")
@@ -64,13 +64,13 @@ This role has been tested on these [container images](https://hub.docker.com/u/r
 |---------|----|
 |[EL](https://hub.docker.com/r/robertdebock/enterpriselinux)|8, 9, 10|
 
-The minimum version of Ansible required is 2.12, tests have been done to:
+The minimum version of Ansible required is 2.12, tests have been done on:
 
 - The previous version.
 - The current version.
 - The development version.
 
-If you find issues, please register them in [GitHub](https://github.com/robertdebock/ansible-role-epel/issues).
+If you find issues, please register them on [GitHub](https://github.com/robertdebock/ansible-role-epel/issues).
 
 ## [License](#license)
 
